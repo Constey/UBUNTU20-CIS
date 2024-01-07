@@ -280,11 +280,11 @@ ubtu20cis_rule_4_1_9: true
 ubtu20cis_rule_4_2_1: true
 ubtu20cis_rule_4_2_2: true
 ubtu20cis_rule_4_2_3: true
-ubtu20cis_rule_4_2_4: true
+ubtu20cis_rule_4_2_4: false #SSHD User Limit
 ubtu20cis_rule_4_2_5: true
-ubtu20cis_rule_4_2_6: true
-ubtu20cis_rule_4_2_7: true
-ubtu20cis_rule_4_2_8: true
+ubtu20cis_rule_4_2_6: false #PAM Safety
+ubtu20cis_rule_4_2_7: false #Root Login
+ubtu20cis_rule_4_2_8: false #HostBasedAuthentication
 ubtu20cis_rule_4_2_9: true
 ubtu20cis_rule_4_2_10: true
 ubtu20cis_rule_4_2_11: true
@@ -293,7 +293,7 @@ ubtu20cis_rule_4_2_13: true
 ubtu20cis_rule_4_2_14: true
 ubtu20cis_rule_4_2_15: true
 ubtu20cis_rule_4_2_16: true
-ubtu20cis_rule_4_2_17: true
+ubtu20cis_rule_4_2_17: false # SSH Banner
 ubtu20cis_rule_4_2_18: true
 ubtu20cis_rule_4_2_19: true
 ubtu20cis_rule_4_2_20: true
@@ -526,8 +526,8 @@ ubtu20cis_disable_dynamic_motd: false
 # Control 1.8.2
 # This will be the motd banner must not contain the below items in order to be compliant with Ubuntu 20 CIS
 # \m, \r, \s, \v or references to the OS platform
-ubtu20cis_warning_banner: |
-        Authorized uses only. All activity may be monitored and reported.
+#ubtu20cis_warning_banner: |
+#        Authorized uses only. All activity may be monitored and reported.
 
 # Section 2 Control Variables
 # Control 2.1.1.1
